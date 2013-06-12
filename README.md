@@ -1,7 +1,7 @@
 Python_XML
 ==========
 
-read xml for SOAP request and store the reply on cvs
+read xml for SOAP request and store the reply on csv
 
 Questo script parte da un template xml e da un file di dati così formato :
 CADF000001|p.pippo|111111
