@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+       <soapenv:Header>
+                      <wsse:Security
+                                      xmlns:wsse="http://xxxx.xsd"
+                                      xmlns:wsu="http://xxxx.xsd"
+                                      soapenv:mustUnderstand="X">
+                                      <wsse:UsernameToken wsu:Id="UsernameToken-1">
+                                             <wsse:Username>username</wsse:Username>
+                                             <wsse:Password
+                                                   Type="http://wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+                                      </wsse:UsernameToken>
+                      </wsse:Security>
+       </soapenv:Header>
+       <soapenv:Body>
+                      <STD_QDS_CertificateRetrievalST xmlns="http://www.pippo.it">
+                      <smartcardNumber>number</smartcardNumber>
+                      </STD_QDS_CertificateRetrievalST>
+       </soapenv:Body>
+</soapenv:Envelope>
